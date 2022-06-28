@@ -99,6 +99,7 @@
         left: 0;
         width: 100%;
         padding: 0;
+        z-index: 200;
     }
 
     .header nav ul li {
