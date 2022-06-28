@@ -60,7 +60,7 @@
 
 @media only screen and (max-width: 600px) {
     .Hero {
-        padding: 5vh 0;
+        padding: 10vh 0;
     }
 
     .Hero .content h1 {

@@ -21,7 +21,9 @@ a {
   --White: #ffffff;
   --Black: #000000;
   --Dark: #262626;
+  --Gray1: rgb(81, 81, 81);
   --Gray: gray;
+  --Gray2: #dddddd;
   --Light-Gray: #eeeeee;
   --Brown: #a67c52;
 }

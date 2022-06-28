@@ -1,0 +1,82 @@
+.About {
+    padding: 40px 0;
+}
+
+.About .content {
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.About .content h1 {
+    text-transform: uppercase;
+    font-weight: initial;
+    color: var(--Gray1);
+}
+
+.About .content p {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    line-height: 25px;
+    font-size: 14px;
+    color: var(--Gray);
+}
+
+.About .content .Cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 60px;
+}
+
+.About .content .Cards .Card {
+    padding: 20px;
+    margin: 10px;
+}
+
+.About .content .Cards .Card .CardIcon {
+    border: 1px solid var(--Gray2);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.About .content .Cards .Card h3 {
+    font-size: 18px;
+    color: var(--Dark);
+}
+
+.About .content .Cards .Card p {
+    max-width: unset;
+    font-size: 13px;
+    line-height: 25px;
+    color: var(--Gray);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+    .About .content .Cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .About {
+        padding: 20px 0;
+    }
+
+    .About .content .Cards {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    .About .content .Cards .Card {
+        margin: 10px 0;
+    }
+}
