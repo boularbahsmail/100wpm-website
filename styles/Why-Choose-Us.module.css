@@ -1,0 +1,71 @@
+.whyus {
+    text-align: center;
+    background-color: var(--Gray2);
+    padding-top: 20px;
+}
+
+.whyus .banner {
+    padding: 20px;
+}
+
+.whyus .banner p {
+    font-size: 15px;
+    line-height: 30px;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.whyus .banner h1 {
+    text-transform: uppercase;
+    font-weight: initial;
+    color: var(--Gray1);
+}
+
+.whyus .services {
+    background-color: var(--White);
+}
+
+.whyus .services .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.whyus .services .content .Card {
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+.whyus .services .content .Card p {
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--Gray);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+    .whyus .services .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .whyus {
+        padding-top: 20px;
+    }
+
+    .whyus .services .content {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+        padding: 10px 0;
+    }
+
+    .whyus .services .content .Card {
+        margin: 0;
+    }
+}
