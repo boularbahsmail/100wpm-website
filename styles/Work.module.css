@@ -1,0 +1,136 @@
+.work {
+    text-align: center;
+    background-color: var(--Gray2);
+    padding-top: 20px;
+    margin-top: 60px;
+}
+
+.work .banner {
+    padding: 20px;
+}
+
+.work .banner h1 {
+    text-transform: uppercase;
+    font-weight: initial;
+    color: var(--Gray1);
+}
+
+.work .banner p {
+    font-size: 15px;
+    line-height: 30px;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.work .workWrapper {
+    background-color: var(--White);
+}
+
+.work .workWrapper .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.work .content .WorkCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Gray);
+    margin: 10px;
+}
+
+.work .content .WorkCard:nth-child(2),
+.work .content .WorkCard:nth-child(4) {
+    flex-direction: row-reverse;
+}
+
+.work .content .WorkCard .WorkText,
+.work .content .WorkCard .WorkImg {
+    padding: 20px;
+    width: 50%;
+}
+
+.work .content .WorkCard .WorkImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.work .content .WorkCard .WorkImg img {
+    width: 100%;
+}
+
+.work .content .WorkCard .WorkText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work .content .WorkCard .WorkText h2 {
+    color: var(--Dark);
+    transition: .2s;
+}
+
+.work .content .WorkCard .WorkText h2:hover {
+    color: var(--Brown);
+}
+
+.work .content .WorkCard .WorkText p {
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--Gray);
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+.work .content .WorkCard .WorkText button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--Dark);
+    font-size: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.work .content .WorkCard .WorkText button:hover {
+    color: var(--Brown);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 850px) {
+    .work .content .WorkCard {
+        flex-direction: column;
+    }
+
+    .work .content .WorkCard:nth-child(2),
+    .work .content .WorkCard:nth-child(4) {
+        flex-direction: column;
+    }
+
+    .work .content .WorkCard .WorkText,
+    .work .content .WorkCard .WorkImg {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .work .banner h1 {
+        font-size: 25px;
+    }
+
+    .work .banner p {
+        font-size: 14px;
+    }
+}

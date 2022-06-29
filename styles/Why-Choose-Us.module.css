@@ -8,18 +8,18 @@
     padding: 20px;
 }
 
+.whyus .banner h1 {
+    text-transform: uppercase;
+    font-weight: initial;
+    color: var(--Gray1);
+}
+
 .whyus .banner p {
     font-size: 15px;
     line-height: 30px;
     max-width: 800px;
     width: 100%;
     margin: 20px auto;
-}
-
-.whyus .banner h1 {
-    text-transform: uppercase;
-    font-weight: initial;
-    color: var(--Gray1);
 }
 
 .whyus .services {
@@ -67,5 +67,15 @@
 
     .whyus .services .content .Card {
         margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .whyus .banner h1 {
+        font-size: 25px;
+    }
+
+    .whyus .banner p {
+        font-size: 14px;
     }
 }

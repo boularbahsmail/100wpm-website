@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import WhyChooseUs from '../components/Why-Choose-Us';
+import Work from '../components/Work';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Hero />
         <About />
         <WhyChooseUs />
+        <Work />
       </div>
     </div>
   )
