@@ -1,0 +1,123 @@
+.blogs {
+    text-align: center;
+    padding: 60px 0;
+    margin-top: 60px;
+    background-color: var(--White);
+}
+
+.blogs .banner {
+    padding: 40px 20px;
+    background-color: var(--Gray2);
+}
+
+.blogs .banner h1 {
+    text-transform: uppercase;
+    font-weight: initial;
+    color: var(--Gray1);
+}
+
+.blogs .banner p {
+    font-size: 15px;
+    line-height: 30px;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.blogs .Cards {
+    padding: 20px 10px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.blogs .Cards .Card {
+    margin: 10px;
+    background-color: var(--Light-Gray);
+}
+
+.blogs .Cards .Card .BlogCover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.blogs .Cards .Card .BlogCover img {
+    width: 100%;
+}
+
+.blogs .Cards .Card .BlogContent {
+    text-align: left;
+    padding: 20px;
+}
+
+.blogs .Cards .Card .BlogContent h3 {
+    font-size: 15px;
+    color: var(--Gray1);
+    transition: .2s;
+}
+
+.blogs .Cards .Card .BlogContent h3:hover {
+    color: var(--Brown);
+}
+
+.blogs .Cards .Card .BlogContent i {
+    font-size: 13px;
+    color: var(--Brown);
+    font-style: normal;
+}
+
+.blogs .Cards .Card .BlogContent p {
+    font-size: 13px;
+    line-height: 25px;
+    color: var(--Gray1);
+}
+
+.blogs .more {
+    padding: 12px 24px;
+    border: 2px solid var(--Brown);
+    border-radius: 2px;
+    outline: none;
+    text-transform: uppercase;
+    background-color: var(--White);
+    color: var(--Brown);
+    font-size: 17px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.blogs .more:hover {
+    background-color: var(--Brown);
+    color: var(--White);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 950px) {
+    .blogs .Cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .blogs .Cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .blogs .banner h1 {
+        font-size: 25px;
+    }
+
+    .blogs .banner p {
+        font-size: 14px;
+    }
+
+    .blogs .Cards .Card {
+        margin: 10px 0;
+    }
+}

@@ -7,6 +7,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import WhyChooseUs from '../components/Why-Choose-Us';
 import Work from '../components/Work';
+import Blogs from '../components/Blogs';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <About />
         <WhyChooseUs />
         <Work />
+        <Blogs />
       </div>
     </div>
   )

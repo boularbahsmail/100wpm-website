@@ -46,6 +46,7 @@ const Work = () => {
                     : null
                 }
             </div>
+            <a href="" className={styles.more}>More Projects</a>
         </div>
     </div>
   )

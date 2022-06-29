@@ -25,6 +25,7 @@
 
 .work .workWrapper {
     background-color: var(--White);
+    padding-bottom: 50px;
 }
 
 .work .workWrapper .content {
@@ -38,7 +39,7 @@
     padding: 60px 0;
 }
 
-.work .content .WorkCard {
+.work .workWrapper .content .WorkCard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,45 +47,45 @@
     margin: 10px;
 }
 
-.work .content .WorkCard:nth-child(2),
-.work .content .WorkCard:nth-child(4) {
+.work .workWrapper .content .WorkCard:nth-child(2),
+.work .workWrapper .content .WorkCard:nth-child(4) {
     flex-direction: row-reverse;
 }
 
-.work .content .WorkCard .WorkText,
-.work .content .WorkCard .WorkImg {
+.work .workWrapper .content .WorkCard .WorkText,
+.work .workWrapper .content .WorkCard .WorkImg {
     padding: 20px;
     width: 50%;
 }
 
-.work .content .WorkCard .WorkImg {
+.work .workWrapper .content .WorkCard .WorkImg {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
 }
 
-.work .content .WorkCard .WorkImg img {
+.work .workWrapper .content .WorkCard .WorkImg img {
     width: 100%;
 }
 
-.work .content .WorkCard .WorkText {
+.work .workWrapper .content .WorkCard .WorkText {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.work .content .WorkCard .WorkText h2 {
+.work .workWrapper .content .WorkCard .WorkText h2 {
     color: var(--Dark);
     transition: .2s;
 }
 
-.work .content .WorkCard .WorkText h2:hover {
+.work .workWrapper .content .WorkCard .WorkText h2:hover {
     color: var(--Brown);
 }
 
-.work .content .WorkCard .WorkText p {
+.work .workWrapper .content .WorkCard .WorkText p {
     font-size: 14px;
     line-height: 25px;
     color: var(--Gray);
@@ -93,7 +94,7 @@
     margin: auto;
 }
 
-.work .content .WorkCard .WorkText button {
+.work .workWrapper .content .WorkCard .WorkText button {
     border: none;
     outline: none;
     background-color: transparent;
@@ -104,23 +105,41 @@
     transition: .2s;
 }
 
-.work .content .WorkCard .WorkText button:hover {
+.work .workWrapper .content .WorkCard .WorkText button:hover {
     color: var(--Brown);
+}
+
+.work .workWrapper .more {
+    padding: 12px 24px;
+    border: 2px solid var(--Brown);
+    border-radius: 2px;
+    outline: none;
+    text-transform: uppercase;
+    background-color: var(--White);
+    color: var(--Brown);
+    font-size: 17px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.work .workWrapper .more:hover {
+    background-color: var(--Brown);
+    color: var(--White);
 }
 
 /* Media Queries */
 @media only screen and (max-width: 850px) {
-    .work .content .WorkCard {
+    .work .workWrapper .content .WorkCard {
         flex-direction: column;
     }
 
-    .work .content .WorkCard:nth-child(2),
-    .work .content .WorkCard:nth-child(4) {
+    .work .workWrapper .content .WorkCard:nth-child(2),
+    .work .workWrapper .content .WorkCard:nth-child(4) {
         flex-direction: column;
     }
 
-    .work .content .WorkCard .WorkText,
-    .work .content .WorkCard .WorkImg {
+    .work .workWrapper .content .WorkCard .WorkText,
+    .work .workWrapper .content .WorkCard .WorkImg {
         width: 100%
     }
 }
