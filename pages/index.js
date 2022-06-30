@@ -9,6 +9,7 @@ import WhyChooseUs from '../components/Why-Choose-Us';
 import Work from '../components/Work';
 import Blogs from '../components/Blogs';
 import Testimonials from '../components/Testimonials';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <Work />
         <Blogs />
         <Testimonials />
+        <Footer />
       </div>
     </div>
   )
