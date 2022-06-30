@@ -8,6 +8,7 @@ import About from '../components/About';
 import WhyChooseUs from '../components/Why-Choose-Us';
 import Work from '../components/Work';
 import Blogs from '../components/Blogs';
+import Testimonials from '../components/Testimonials';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <WhyChooseUs />
         <Work />
         <Blogs />
+        <Testimonials />
       </div>
     </div>
   )
